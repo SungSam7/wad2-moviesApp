@@ -9,6 +9,8 @@ import MovieDetails from "../src/components/movieDetails";
 import MovieHeader from '../src/components/headerMovie';
 
 
+
+
 const sample = {
   adult: false,
   backdrop_path: "/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg",
@@ -88,6 +90,14 @@ const sample = {
   video: false,
   vote_average: 7,
   vote_count: 9692
+};
+
+const App = () => {
+  return (
+    <div className="jumbotron">
+      <MoviePage movie={sample} />
+    </div>
+  );
 };
 
 storiesOf("Home Page/MovieCard", module)
